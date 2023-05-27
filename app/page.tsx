@@ -1,13 +1,17 @@
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="p-10 text-red-500">
-      <h1> Let&#x27;s build awesome portfolio</h1>
-      
+    <main className='bg-[rgb(36,36,36)] text-white h-screen'>
       {/* Header */}
+      <Header />
 
       {/* Hero */}
+      <section id="hero">
+        <Hero />
+      </section>
 
       {/* About  */}
 
