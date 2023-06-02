@@ -7,6 +7,7 @@ import Skills from '@/components/Skills'
 import WorkExperience from '@/components/WorkExperience'
 import Image from 'next/image'
 import Link from 'next/link'
+import MyImage from '../public/himal.jpg'
 
 export default function Home() {
   return (
@@ -46,11 +47,11 @@ export default function Home() {
       <Link href='#hero'>
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
-            <img 
-              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0' 
-              src='./himal.jpg'
+            <Image 
+              src={MyImage}
               alt='profile' 
-            />
+              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0' 
+            /> 
           </div>
         </footer>
       </Link>

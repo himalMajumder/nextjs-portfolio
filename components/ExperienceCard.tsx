@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -19,21 +20,25 @@ function ExperienceCard({ }: Props) {
                 <h4 className='text-4xl font-light'>CEO of PAPAFM</h4>
                 <p className='font-bold text-2xl mt-1'>PAPAFM</p>
                 <div className='flex space-x-2 my-2'>
-                    <img
+                        <Image 
+                            src='https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png'
+                            className='h-10 w-10 rounded-full'
+                            width={500}
+                            height={500} 
+                            alt="html"
+                        /> 
+                        <Image 
+                            src='https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png'
+                            className='h-10 w-10 rounded-full'
+                            width={500}
+                            height={500} 
+                            alt="html"
+                        />   
+                    {/* <img
                         className='h-10 w-10 rounded-full'
                         src='https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png'
                         alt=''
-                    />
-                    <img
-                        className='h-10 w-10 rounded-full'
-                        src='https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png'
-                        alt=''
-                    />
-                    <img
-                        className='h-10 w-10 rounded-full'
-                        src='https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png'
-                        alt=''
-                    />
+                    /> */}
                 </div>
                 <p className='uppercase py-5 text-gray-300'>Starting work... Ended...</p>
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
